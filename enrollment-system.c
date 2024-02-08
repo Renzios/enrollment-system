@@ -25,9 +25,11 @@ int main(void)
                 break;
                 
             case 2:
+                // Faculty Menu
                 break;
 
             case 3:
+                // Academic Assistant Menu
                 break;
 
             default:
@@ -71,6 +73,7 @@ void studentMenu()
                 break;
 
             case 2:
+                // Print EAF
                 break;
 
             case 3:
@@ -101,12 +104,15 @@ void enrollCourses(int studentID)
         switch (answer)
         {
             case 1:
+                addCourses(studentID);
                 break;
 
             case 2:
+                // Edit Courses
                 break;
 
             case 3:
+                // Delete Courses
                 break;
 
             default:
@@ -114,4 +120,9 @@ void enrollCourses(int studentID)
         }
     }
     while (transaction <= 1 || transaction >= 3);
+}
+
+void addCourses(int studentID)
+{
+    printf("Adding Courses\n");
 }
