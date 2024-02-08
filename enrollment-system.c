@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void studentMenu();
+void enrollCourses(int studentID);
 
 int main(void)
 {
@@ -66,6 +67,7 @@ void studentMenu()
         switch (answer)
         {
             case 1:
+                enrollCourses(studentID);
                 break;
 
             case 2:
@@ -79,4 +81,37 @@ void studentMenu()
         }
     }
     while (transaction != 3);
+}
+
+void enrollCourses(int studentID)
+{
+    int answer;
+
+    do
+    {
+        printf("Enroll Courses\n");
+        printf("1] Add Courses\n");
+        printf("2] Edit Courses\n");
+        printf("3] Delete Courses\n");
+
+
+        printf("Answer: ");
+        scanf("%d", &answer);
+
+        switch (answer)
+        {
+            case 1:
+                break;
+
+            case 2:
+                break;
+
+            case 3:
+                break;
+
+            default:
+                break;
+        }
+    }
+    while (transaction <= 1 || transaction >= 3);
 }
